@@ -43,77 +43,6 @@
 				dynamicLoadScript()
 			})
 		</script>
-		<script>
-			document.addEventListener("recaptchaLoaded", function () {
-				if (!gdprConfirmed()) {
-					return
-				}
-				;(function (grecaptcha, sitekey, actions) {
-					var recaptcha = {
-						execute: function (action, submitFormCb) {
-							try {
-								grecaptcha
-									.execute(sitekey, { action: action })
-									.then(function (token) {
-										var forms =
-											document.getElementsByTagName(
-												"form"
-											)
-
-										for (var i = 0; i < forms.length; i++) {
-											var fields =
-												forms[i].getElementsByTagName(
-													"input"
-												)
-
-											for (
-												var j = 0;
-												j < fields.length;
-												j++
-											) {
-												var field = fields[j]
-
-												if (
-													"recaptchaResponse" ===
-													field.getAttribute("name")
-												) {
-													field.setAttribute(
-														"value",
-														token
-													)
-													break
-												}
-											}
-										}
-										submitFormCb()
-									})
-							} catch (e) {
-								var formError =
-									document.querySelector(".u-form-send-error")
-
-								if (formError) {
-									formError.innerText =
-										"Site Owner Error: " +
-										e.message.replace(/:[\s\S]*/, "")
-									formError.style.display = "block"
-								}
-							}
-						},
-
-						executeContact: function (submitFormCb) {
-							recaptcha.execute(actions["contact"], submitFormCb)
-						},
-					}
-
-					window.recaptchaObject = recaptcha
-				})(
-					grecaptcha,
-
-					"6Lc2HDEiAAAAALpe1yqNarK-BmlyYl_MNPZx7_AB",
-					{ contact: "contact" }
-				)
-			})
-		</script>
 	</head>
 	<body
 		data-path-to-root="/"
@@ -233,7 +162,13 @@
 					class="data-layout-selected u-clearfix u-expanded-width u-layout-wrap u-layout-wrap-1">
 					<div class="u-layout">
 						<div class="u-layout-row">
-							<div
+							<h2
+								class="u-align-center u-text u-text-default u-text-1"
+								style="padding-bottom: 20px;"
+								>
+								Contact Us
+							</h2>
+							<!-- <div
 								class="u-align-center u-container-align-center u-container-style u-layout-cell u-left-cell u-size-26-lg u-size-26-xl u-size-60-md u-size-60-sm u-size-60-xs u-layout-cell-1"
 								data-animation-name="customAnimationIn"
 								data-animation-duration="1500">
@@ -246,23 +181,15 @@
 									<div
 										class="u-align-left u-expanded-width u-form u-form-1">
 										<form
-											action="https://forms.nicepagesrv.com/v2/form/process"
-											class="u-clearfix u-form-spacing-28 u-form-vertical u-inner-form"
-											style="padding: 0px"
+											action="https://formsubmit.co/prasannarv1308@gmail.com" method="POST"
+											style="
+												padding: 0px;
+												display: flex;
+												flex-direction: column;
+												align-items: stretch;
+											"
 											source="email"
 											name="form">
-											<input
-												type="hidden"
-												id="siteId"
-												name="siteId"
-												value="6248820"
-												wfd-invisible="true" />
-											<input
-												type="hidden"
-												id="pageId"
-												name="pageId"
-												value="345309248"
-												wfd-invisible="true" />
 											<div
 												class="u-form-group u-form-name">
 												<label
@@ -279,6 +206,8 @@
 													class="u-border-2 u-border-black u-border-no-left u-border-no-right u-border-no-top u-input u-input-rectangle"
 													required="" />
 											</div>
+											<input type="hidden" name="_subject" value="New submission!">
+											<input type="hidden" name="_captcha" value="false">
 											<div
 												class="u-form-email u-form-group">
 												<label
@@ -354,8 +283,8 @@
 										</form>
 									</div>
 								</div>
-							</div>
-							<div
+							</div> -->
+							<!-- <div
 								class="u-container-align-center u-container-style u-image u-layout-cell u-right-cell u-size-34-lg u-size-34-xl u-size-60-md u-size-60-sm u-size-60-xs u-image-1"
 								data-animation-name="customAnimationIn"
 								data-animation-duration="1500"
@@ -364,7 +293,20 @@
 								data-image-height="1500">
 								<div
 									class="u-container-layout u-valign-middle u-container-layout-2"></div>
-							</div>
+							</div> -->
+							<iframe
+								title="Shree Die Casting Location"
+								src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3888.366250727932!2d80.17869507559162!3d12.948399987364908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU2JzU0LjIiTiA4MMKwMTAnNTIuNiJF!5e0!3m2!1sen!2sin!4v1723368161192!5m2!1sen!2sin"
+								width="600"
+								height="450"
+								style="
+									border: 0;
+									width: 100%;
+									border-radius: 10px;
+								"
+								allowfullscreen=""
+								loading="lazy"
+								referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
 				</div>
@@ -386,8 +328,12 @@
 											alt="" /></span
 									>&nbsp;Call Us
 								</h5>
-								<p class="u-text u-text-4">
-									1 (234) 567-891,<br />1 (234) 987-654
+								<p>
+									<a
+										href="tel:6381984074"
+										class="u-text u-text-4"
+										>+91 6381984074</a
+									>
 								</p>
 							</div>
 						</div>
@@ -408,8 +354,11 @@
 									>&nbsp;Location
 								</h5>
 								<p class="u-text u-text-6">
-									121 Rock Sreet, 21 Avenue, New York, NY
-									92103-9000
+									<address>
+										No. D-6, Self Help Industrial Estate<br />
+										Keelkattalai, Chennai - 600117<br />
+										Phone : 6381984074<br />
+									</address>
 								</p>
 							</div>
 						</div>
@@ -445,8 +394,9 @@
 				<h1 class="footer__logo">Shree Die Casting</h1>
 				<h2>Contact</h2>
 				<address>
-					5534 Somewhere In. The World 22193-10212<br />
-					Phone : 1234567890<br />
+					No. D-6, Self Help Industrial Estate<br />
+					Keelkattalai, Chennai - 600117<br />
+					Phone : 6381984074<br />
 				</address>
 			</div>
 

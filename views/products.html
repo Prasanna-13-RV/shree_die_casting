@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="../css/style.css" media="screen" />
 		<link rel="stylesheet" href="../css/main.css" media="screen" />
 		<link rel="stylesheet" href="../css/home.css" media="screen" />
+		<link rel="stylesheet" href="../css/products.css" media="screen" />
 		<link rel="stylesheet" href="../css/footer.css" media="screen" />
 		<script
 			class="u-script"
@@ -41,77 +42,6 @@
 					return
 				}
 				dynamicLoadScript()
-			})
-		</script>
-		<script>
-			document.addEventListener("recaptchaLoaded", function () {
-				if (!gdprConfirmed()) {
-					return
-				}
-				;(function (grecaptcha, sitekey, actions) {
-					var recaptcha = {
-						execute: function (action, submitFormCb) {
-							try {
-								grecaptcha
-									.execute(sitekey, { action: action })
-									.then(function (token) {
-										var forms =
-											document.getElementsByTagName(
-												"form"
-											)
-
-										for (var i = 0; i < forms.length; i++) {
-											var fields =
-												forms[i].getElementsByTagName(
-													"input"
-												)
-
-											for (
-												var j = 0;
-												j < fields.length;
-												j++
-											) {
-												var field = fields[j]
-
-												if (
-													"recaptchaResponse" ===
-													field.getAttribute("name")
-												) {
-													field.setAttribute(
-														"value",
-														token
-													)
-													break
-												}
-											}
-										}
-										submitFormCb()
-									})
-							} catch (e) {
-								var formError =
-									document.querySelector(".u-form-send-error")
-
-								if (formError) {
-									formError.innerText =
-										"Site Owner Error: " +
-										e.message.replace(/:[\s\S]*/, "")
-									formError.style.display = "block"
-								}
-							}
-						},
-
-						executeContact: function (submitFormCb) {
-							recaptcha.execute(actions["contact"], submitFormCb)
-						},
-					}
-
-					window.recaptchaObject = recaptcha
-				})(
-					grecaptcha,
-
-					"6Lc2HDEiAAAAALpe1yqNarK-BmlyYl_MNPZx7_AB",
-					{ contact: "contact" }
-				)
 			})
 		</script>
 	</head>
@@ -225,7 +155,6 @@
 			</div>
 		</header>
 
-		
 		<section
 			class="u-clearfix u-container-align-center u-section-5"
 			id="sec-b0ff">
@@ -243,14 +172,17 @@
 					<div class="u-layout" style="">
 						<div class="u-layout-row cardsFormat" style="">
 							<div
-								class="u-align-left u-container-align-center u-container-style u-image u-layout-cell u-left-cell u-size-27-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-size-xs-60 u-image-1"
-								src=""
-								data-image-width="740"
-								data-image-height="1110"
-								data-animation-name="customAnimationIn"
-								data-animation-duration="1500"
-								data-animation-delay="500">
-								<div class="u-container-layout u-container-layout-1"></div>
+								class="u-align-left u-container-align-center u-container-style u-image u-layout-cell u-left-cell u-size-27-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-size-xs-60 u-image-1 slideshow-container">
+								<img
+									src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg"
+									alt=""
+									class="active" />
+								<img
+									src="https://img.freepik.com/free-photo/abstract-transparent-vivid-autumn-leaf_23-2148239712.jpg"
+									alt="" />
+								<img
+									src="https://img.freepik.com/free-photo/freshness-beauty-nature-wet-drops-generated-by-ai_188544-42230.jpg"
+									alt="" />
 							</div>
 							<div
 								class="u-align-left u-container-align-center u-container-style u-layout-cell u-right-cell u-shape-rectangle u-size-30-xl u-size-33-lg u-size-60-md u-size-60-sm u-size-60-xs u-size-xs-60 u-layout-cell-2"
@@ -267,7 +199,6 @@
 												class="u-container-style u-list-item u-repeater-item u-shape-rectangle u-list-item-1">
 												<div
 													class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-													
 													<p
 														class="u-align-left u-text u-text-default u-text-2">
 														The consulting firm
@@ -306,14 +237,17 @@
 
 						<div class="u-layout-row cardsFormat" style="">
 							<div
-								class="u-align-left u-container-align-center u-container-style u-image u-layout-cell u-left-cell u-size-27-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-size-xs-60 u-image-1"
-								src=""
-								data-image-width="740"
-								data-image-height="1110"
-								data-animation-name="customAnimationIn"
-								data-animation-duration="1500"
-								data-animation-delay="500">
-								<div class="u-container-layout u-container-layout-1"></div>
+								class="u-align-left u-container-align-center u-container-style u-image u-layout-cell u-left-cell u-size-27-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-size-xs-60 u-image-1 slideshow-container">
+								<img
+									src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg"
+									alt=""
+									class="active" />
+								<img
+									src="https://img.freepik.com/free-photo/freshness-beauty-nature-wet-drops-generated-by-ai_188544-42230.jpg"
+									alt="" />
+								<img
+									src="https://img.freepik.com/free-photo/abstract-transparent-vivid-autumn-leaf_23-2148239712.jpg"
+									alt="" />
 							</div>
 							<div
 								class="u-align-left u-container-align-center u-container-style u-layout-cell u-right-cell u-shape-rectangle u-size-30-xl u-size-33-lg u-size-60-md u-size-60-sm u-size-60-xs u-size-xs-60 u-layout-cell-2"
@@ -330,7 +264,6 @@
 												class="u-container-style u-list-item u-repeater-item u-shape-rectangle u-list-item-1">
 												<div
 													class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-													
 													<p
 														class="u-align-left u-text u-text-default u-text-2">
 														The consulting firm
@@ -376,8 +309,9 @@
 				<h1 class="footer__logo">Shree Die Casting</h1>
 				<h2>Contact</h2>
 				<address>
-					5534 Somewhere In. The World 22193-10212<br />
-					Phone : 1234567890<br />
+					No. D-6, Self Help Industrial Estate<br />
+					Keelkattalai, Chennai - 600117<br />
+					Phone : 6381984074<br />
 				</address>
 			</div>
 
@@ -436,5 +370,29 @@
 				</li>
 			</ul>
 		</footer>
+
+		<script>
+			// Get all slideshow containers
+			const slideshows = document.querySelectorAll(".slideshow-container")
+
+			slideshows.forEach((slideshow) => {
+				const images = slideshow.querySelectorAll("img")
+				let currentIndex = 0
+
+				function showNextImage() {
+					// Remove the 'active' class from the current image
+					images[currentIndex].classList.remove("active")
+
+					// Increment the index to show the next image
+					currentIndex = (currentIndex + 1) % images.length
+
+					// Add the 'active' class to the new image
+					images[currentIndex].classList.add("active")
+				}
+
+				// Change image every 2 seconds
+				setInterval(showNextImage, 2000)
+			})
+		</script>
 	</body>
 </html>

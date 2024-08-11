@@ -43,77 +43,6 @@
 				dynamicLoadScript()
 			})
 		</script>
-		<script>
-			document.addEventListener("recaptchaLoaded", function () {
-				if (!gdprConfirmed()) {
-					return
-				}
-				;(function (grecaptcha, sitekey, actions) {
-					var recaptcha = {
-						execute: function (action, submitFormCb) {
-							try {
-								grecaptcha
-									.execute(sitekey, { action: action })
-									.then(function (token) {
-										var forms =
-											document.getElementsByTagName(
-												"form"
-											)
-
-										for (var i = 0; i < forms.length; i++) {
-											var fields =
-												forms[i].getElementsByTagName(
-													"input"
-												)
-
-											for (
-												var j = 0;
-												j < fields.length;
-												j++
-											) {
-												var field = fields[j]
-
-												if (
-													"recaptchaResponse" ===
-													field.getAttribute("name")
-												) {
-													field.setAttribute(
-														"value",
-														token
-													)
-													break
-												}
-											}
-										}
-										submitFormCb()
-									})
-							} catch (e) {
-								var formError =
-									document.querySelector(".u-form-send-error")
-
-								if (formError) {
-									formError.innerText =
-										"Site Owner Error: " +
-										e.message.replace(/:[\s\S]*/, "")
-									formError.style.display = "block"
-								}
-							}
-						},
-
-						executeContact: function (submitFormCb) {
-							recaptcha.execute(actions["contact"], submitFormCb)
-						},
-					}
-
-					window.recaptchaObject = recaptcha
-				})(
-					grecaptcha,
-
-					"6Lc2HDEiAAAAALpe1yqNarK-BmlyYl_MNPZx7_AB",
-					{ contact: "contact" }
-				)
-			})
-		</script>
 	</head>
 	<body
 		data-path-to-root="/"
@@ -273,6 +202,33 @@
 				>
 			</div>
 		</section>
+		<section class="marquee-container">
+			<div class="marquee">
+				<img src="./public/images/air_breeze.jpeg" alt="Air Breeze" />
+				<img
+					src="./public/images/east_west.jpeg"
+					alt="East West Combined Industry" />
+				<img src="./public/images/kali.jpeg" alt="Kali" />
+				<img
+					src="./public/images/philips_versuni.jpeg"
+					alt="Philips Versuni" />
+				<img src="./public/images/preethi.jpeg" alt="Preethi" />
+				<img src="./public/images/tag.jpeg" alt="Tag" />
+				<img src="./public/images/versuni.jpeg" alt="Versuni" />
+
+				<img src="./public/images/air_breeze.jpeg" alt="Air Breeze" />
+				<img
+					src="./public/images/east_west.jpeg"
+					alt="East West Combined Industry" />
+				<img src="./public/images/kali.jpeg" alt="Kali" />
+				<img
+					src="./public/images/philips_versuni.jpeg"
+					alt="Philips Versuni" />
+				<img src="./public/images/preethi.jpeg" alt="Preethi" />
+				<img src="./public/images/tag.jpeg" alt="Tag" />
+				<img src="./public/images/versuni.jpeg" alt="Versuni" />
+			</div>
+		</section>
 		<section
 			class="u-clearfix u-container-align-center u-grey-5 u-section-2"
 			id="carousel_3ff9">
@@ -289,28 +245,28 @@
 					data-animation-name="customAnimationIn"
 					data-animation-duration="1000"
 					data-animation-delay="0">
-					We design homes
+					Why Choose Us
 				</h2>
 				<p
 					class="u-align-center u-text u-text-3"
 					data-animation-name="customAnimationIn"
 					data-animation-duration="1500"
 					data-animation-delay="500">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-					do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in voluptate velit
-					esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-					occaecat cupidatat non proiden.
+					At Shree Die Casting, we specialize in high-quality die
+					casting solutions with a focus on precision and reliability.
+					Our advanced technology and expert craftsmanship have set
+					the standard for excellence in producing durable metal
+					components. We're dedicated to meeting your unique needs and
+					delivering exceptional results, making Shree Die Casting
+					your trusted partner for all your die casting requirements.
 				</p>
 				<a
-					href="#"
+					href="./views/contact.html"
 					class="u-active-black u-align-center u-border-2 u-border-active-black u-border-black u-border-hover-black u-btn u-btn-round u-button-style u-hover-black u-none u-radius-5 u-text-active-white u-text-hover-white u-btn-1"
 					data-animation-name="customAnimationIn"
 					data-animation-duration="1500"
 					data-animation-delay="500"
-					>learn more
+					>Contact Us
 				</a>
 			</div>
 		</section>
@@ -330,15 +286,12 @@
 						data-animation-name="customAnimationIn"
 						data-animation-duration="1500"
 						data-animation-delay="500">
-						At Shree Die Casting (SDC), our vision is to be the
-						global leader in the die casting industry by driving
-						innovation and setting new standards of excellence. We
-						are committed to leveraging advanced technologies and
-						sustainable practices to deliver superior quality
-						products that exceed our customers' expectations. Our
-						goal is to expand our reach worldwide while maintaining
-						our core values of integrity, reliability, and customer
-						satisfaction.
+						At Shree Die Casting, our vision is to lead the die
+						casting industry by embracing innovation and delivering
+						exceptional quality. We aim to set new standards through
+						advanced technology and sustainable practices while
+						staying true to our core values of integrity and
+						customer satisfaction.
 					</p>
 				</div>
 				<div class="vm-div">
@@ -354,15 +307,13 @@
 						data-animation-name="customAnimationIn"
 						data-animation-duration="1500"
 						data-animation-delay="500">
-						Our mission at Shree Die Casting (SDC) is to provide
-						high-quality, precision die casting solutions that meet
-						the diverse needs of our clients. We strive to achieve
-						excellence through state-of-the-art technology, rigorous
-						quality control, and a dedicated team of professionals.
-						By focusing on customer-centric solutions and fostering
-						a culture of continuous improvement, we aim to build
-						lasting partnerships and contribute positively to the
-						industry and our community.
+						Our mission is to provide precise and reliable die
+						casting solutions that cater to the diverse needs of our
+						clients. We are dedicated to achieving excellence
+						through advanced technology, stringent quality control,
+						and a skilled team. By focusing on customer needs and
+						continuous improvement, we strive to build lasting
+						partnerships and contribute positively to our industry.
 					</p>
 				</div>
 			</div>
@@ -859,7 +810,7 @@
 													/></span>
 													<h5
 														class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-2">
-														Design
+														Precision
 													</h5>
 												</div>
 											</div>
@@ -878,7 +829,7 @@
 													/></span>
 													<h5
 														class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-3">
-														Planning
+														Innovation
 													</h5>
 												</div>
 											</div>
@@ -897,7 +848,7 @@
 													/></span>
 													<h5
 														class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-4">
-														Interior
+														Quality
 													</h5>
 												</div>
 											</div>
@@ -916,7 +867,7 @@
 													/></span>
 													<h5
 														class="u-align-center u-custom-font u-font-montserrat u-text u-text-default u-text-5">
-														Projects
+														Efficiency
 													</h5>
 												</div>
 											</div>
@@ -1094,7 +1045,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 					data-animation-name="customAnimationIn"
 					data-animation-duration="1000"
 					data-animation-delay="500">
-					We crete transformative spaces
+					We Create Transformative Components
 				</h2>
 				<div
 					class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-list u-list-1">
@@ -1108,14 +1059,14 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 							<div
 								class="u-container-layout u-similar-container u-valign-middle u-container-layout-1">
 								<h5 class="u-text u-text-default u-text-2">
-									awards won
+									Products
 								</h5>
 								<h3
 									class="u-custom-font u-font-montserrat u-text u-text-default u-text-grey-40 u-text-3"
 									data-animation-name="counter"
 									data-animation-event="scroll"
 									data-animation-duration="3000">
-									17
+									30
 								</h3>
 							</div>
 						</div>
@@ -1128,14 +1079,14 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 							<div
 								class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
 								<h5 class="u-text u-text-default u-text-4">
-									XP YEARS
+									YEARS
 								</h5>
 								<h3
 									class="u-custom-font u-font-montserrat u-text u-text-default u-text-grey-40 u-text-5"
 									data-animation-name="counter"
 									data-animation-event="scroll"
 									data-animation-duration="3000">
-									12+
+									15+
 								</h3>
 							</div>
 						</div>
@@ -1155,7 +1106,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 									data-animation-name="counter"
 									data-animation-event="scroll"
 									data-animation-duration="3000">
-									108
+									8
 								</h3>
 							</div>
 						</div>
@@ -1168,14 +1119,14 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 							<div
 								class="u-container-layout u-similar-container u-valign-middle u-container-layout-4">
 								<h5 class="u-text u-text-default u-text-8">
-									projects
+									Companies
 								</h5>
 								<h3
 									class="u-custom-font u-font-montserrat u-text u-text-default u-text-grey-40 u-text-9"
 									data-animation-name="counter"
 									data-animation-event="scroll"
 									data-animation-duration="3000">
-									150
+									5
 								</h3>
 							</div>
 						</div>
@@ -1232,7 +1183,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 							data-animation-duration="1500"
 							data-animation-delay="500">
 							<div
-								class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+								class="u-container-layout u-similar-container u-valign-top u-container- layout-2">
 								<div
 									alt=""
 									class="custom-expanded u-image u-image-circle u-image-2"
@@ -1500,9 +1451,9 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 									<p>
 										At Shree Die Casting, we specialize in
 										working with a variety of metals,
-										including aluminum, zinc, and magnesium
-										alloys. Our expertise allows us to
-										select the best material for your
+										including aluminum(ADC dual), LM6, LM24,
+										base alloys, zinc. Our expertise allows
+										us to select the best material for your
 										specific application, ensuring optimal
 										performance and durability.
 									</p>
@@ -1673,8 +1624,9 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 				<h1 class="footer__logo">Shree Die Casting</h1>
 				<h2>Contact</h2>
 				<address>
-					5534 Somewhere In. The World 22193-10212<br />
-					Phone : 1234567890<br />
+					No. D-6, Self Help Industrial Estate<br />
+					Keelkattalai, Chennai - 600117<br />
+					Phone : 6381984074<br />
 				</address>
 			</div>
 
