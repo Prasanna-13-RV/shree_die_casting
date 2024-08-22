@@ -808,19 +808,19 @@
 		height: 300px;
 	}
 }
-.u-section-4 {
+/* .u-section-4 {
 	min-height: 1613px;
-}
+} */
 
 .u-section-4 .u-group-1 {
 	margin-top: 0;
 	margin-bottom: 0;
-	min-height: 473px;
+	/* min-height: 473px; */
 	height: auto;
 }
 
 .u-section-4 .u-container-layout-1 {
-	padding: 90px 124px 0;
+	padding: 90px 124px 90px 124px;
 }
 
 .u-section-4 .u-text-1 {
@@ -846,12 +846,13 @@
 .u-section-4 .u-list-1 {
 	grid-template-rows: repeat(1, auto);
 	width: 1140px;
-	margin: -155px auto 60px;
+	margin: 80px auto 30px;
+	
 }
 
 .u-section-4 .u-repeater-1 {
 	grid-template-columns: repeat(3, calc(33.3333% - 13.3333px));
-	min-height: 1186px;
+	/* min-height: 1186px; */
 	grid-gap: 20px;
 }
 
@@ -861,7 +862,7 @@
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
 		),
-		url("https://assets.nicepagecdn.com/d2cc3eaa/50595/images/restaurant-with-green-wall-woode.jpg");
+		url("../public/images/products/motorCasting/motorCasting3.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 0px;
 	--animation-custom_in-translate_y: 300px;
@@ -899,7 +900,7 @@
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
 		),
-		url("https://assets.nicepagecdn.com/d2cc3eaa/50595/images/54654.jpg");
+		url("../public/images/products/trolleyWheels/trolleyWheels2.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 0px;
 	--animation-custom_in-translate_y: 300px;
@@ -937,7 +938,7 @@
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
 		),
-		url("https://assets.nicepagecdn.com/d2cc3eaa/50595/images/poster-mockup-with-vertical-fram.jpg");
+		url("../public/images/products/holdersLockers.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 0px;
 	--animation-custom_in-translate_y: 300px;
@@ -975,7 +976,7 @@
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
 		),
-		url("https://assets.nicepagecdn.com/d2cc3eaa/50595/images/interior-design-with-photoframe.jpg");
+		url("../public/images/products/ebClamps.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 0px;
 	--animation-custom_in-translate_y: 300px;
@@ -1013,7 +1014,7 @@
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
 		),
-		url("https://assets.nicepagecdn.com/d2cc3eaa/50595/images/young-woman-arranging-table-rest.jpg");
+		url("../public/images/products/bushHolders/bushHolder5.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 0px;
 	--animation-custom_in-translate_y: 300px;
@@ -1051,7 +1052,7 @@
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
 		),
-		url("https://assets.nicepagecdn.com/d2cc3eaa/50595/images/elegant-bedroom-interior-with-be.jpg");
+		url("../public/images/products/burners.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 0px;
 	--animation-custom_in-translate_y: 300px;
@@ -1215,9 +1216,9 @@
 		width: 692px;
 	}
 
-	.u-section-4 .u-list-1 {
+	/* .u-section-4 .u-list-1 {
 		width: 940px;
-	}
+	} */
 
 	.u-section-4 .u-repeater-1 {
 		grid-template-columns: repeat(3, calc(33.333333333333336% - 13.3333px));
@@ -1390,7 +1391,7 @@
 	/* min-height: 400px; */
 	height: 400px;
 	pointer-events: auto;
-	background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/6248820/images/multiethnic-designers-pose-against-window_273609-44877.jpg");
+	/* background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/6248820/images/multiethnic-designers-pose-against-window_273609-44877.jpg"); */
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: -300px;
 	--animation-custom_in-translate_y: 0px;
