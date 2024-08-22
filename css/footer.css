@@ -23,9 +23,9 @@
 }
 
 .footer__logo {
-	font-family: "Pacifico", cursive;
+	/* font-family: "Pacifico", cursive; */
 	font-weight: 400;
-	text-transform: lowercase;
+	text-transform: capitalize;
 	font-size: 1.5rem !important;
 }
 

@@ -8438,7 +8438,7 @@ section.u-image:not(.u-hover-box),
 	}
 	.logoDiv {
 		width: 100% !important;
-		padding: 0 20px;
+		/* padding: 0 20px; */
 	}
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -8447,7 +8447,7 @@ section.u-image:not(.u-hover-box),
 	}
 	.logoDiv {
 		width: 100% !important;
-		padding: 0 20px;
+		/* padding: 0 20px; */
 	}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -8456,7 +8456,7 @@ section.u-image:not(.u-hover-box),
 	}
 	.logoDiv {
 		width: 100% !important;
-		padding: 0 20px;
+		/* padding: 0 20px; */
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -8465,7 +8465,7 @@ section.u-image:not(.u-hover-box),
 	}
 	.logoDiv {
 		width: 100% !important;
-		padding: 0 20px;
+		/* padding: 0 20px; */
 	}
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -8474,7 +8474,7 @@ section.u-image:not(.u-hover-box),
 	}
 	.logoDiv {
 		width: 100% !important;
-		padding: 0 20px;
+		/* padding: 0 20px; */
 	}
 }
 @media (max-width: 575px) {
@@ -8483,7 +8483,7 @@ section.u-image:not(.u-hover-box),
 	}
 	.logoDiv {
 		width: 100% !important;
-		padding: 0 20px;
+		/* padding: 0 20px; */
 	}
 }
 .u-body .u-sheet .u-sheet {
@@ -44144,5 +44144,5 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .logoDiv {
 	width: 100% !important;
-	padding: 0 20px;
+	/* padding: 0 20px; */
 }
