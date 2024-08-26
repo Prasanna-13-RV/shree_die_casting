@@ -181,12 +181,16 @@
 	width: 100%;
 	overflow: hidden;
 	position: relative;
-	padding: 30px 0;
+	padding: 30px 1.5rem;
 }
 
 .marquee {
-	display: flex;
-	animation: scroll 15s linear infinite;
+	display: flex !important;
+	flex-direction: column;
+	width: 100%;
+	/* animation: scroll 15s linear infinite; */
+	align-items: center;
+	justify-content: center;
 }
 
 .marquee img {
@@ -197,6 +201,10 @@
 
 .marquee img:hover {
 	transform: scale(1.1);
+}
+
+.swiper {
+	width: 100%;
 }
 
 @keyframes scroll {
@@ -847,7 +855,6 @@
 	grid-template-rows: repeat(1, auto);
 	width: 1140px;
 	margin: 80px auto 30px;
-	
 }
 
 .u-section-4 .u-repeater-1 {
@@ -862,7 +869,7 @@
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
 		),
-		url("../public/images/products/motorCasting/motorCasting3.jpeg");
+		url("../../public/images/products/motorCasting/motorCasting1.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 0px;
 	--animation-custom_in-translate_y: 300px;
@@ -900,7 +907,7 @@
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
 		),
-		url("../public/images/products/trolleyWheels/trolleyWheels2.jpeg");
+		url("../../public/images/products/trolleyWheels/trolleyWheels2.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 0px;
 	--animation-custom_in-translate_y: 300px;
@@ -938,7 +945,7 @@
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
 		),
-		url("../public/images/products/holdersLockers.jpeg");
+		url("../../public/images/products/holdersLockers.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 0px;
 	--animation-custom_in-translate_y: 300px;
@@ -976,7 +983,7 @@
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
 		),
-		url("../public/images/products/ebClamps.jpeg");
+		url("../../public/images/products/ebClamps.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 0px;
 	--animation-custom_in-translate_y: 300px;
@@ -1014,7 +1021,7 @@
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
 		),
-		url("../public/images/products/bushHolders/bushHolder5.jpeg");
+		url("../../public/images/products/bushHolders/bushHolders1.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 0px;
 	--animation-custom_in-translate_y: 300px;
@@ -1052,7 +1059,7 @@
 			rgba(0, 0, 0, 0.2),
 			rgba(0, 0, 0, 0.2)
 		),
-		url("../public/images/products/burners.jpeg");
+		url("../../public/images/products/burners.jpeg");
 	background-position: 50% 50%;
 	--animation-custom_in-translate_x: 0px;
 	--animation-custom_in-translate_y: 300px;
@@ -2394,7 +2401,7 @@
 	--animation-custom_in-rotate: 0deg;
 	--animation-custom_in-scale: 0.3;
 	width: 154px;
-	background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/20b72dd9d347529c80882425/happy-man-with-long-thick-ginger-beard-has-friendly-smile_273609-16616.jpg?version=");
+	background-image: url("https://e7.pngegg.com/pngimages/782/114/png-clipart-profile-icon-circled-user-icon-icons-logos-emojis-users-thumbnail.png");
 	background-position: 50% 50%;
 	margin: 0 auto;
 }
@@ -2430,7 +2437,7 @@
 	--animation-custom_in-rotate: 0deg;
 	--animation-custom_in-scale: 0.3;
 	width: 154px;
-	background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/16689/images/woman4.jpg");
+	background-image: url("https://e7.pngegg.com/pngimages/782/114/png-clipart-profile-icon-circled-user-icon-icons-logos-emojis-users-thumbnail.png");
 	background-position: 50% 50%;
 	margin: 0 auto;
 }
@@ -2468,7 +2475,7 @@
 	--animation-custom_in-rotate: 0deg;
 	--animation-custom_in-scale: 0.3;
 	width: 154px;
-	background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/16689/images/woman7.jpg");
+	background-image: url("https://e7.pngegg.com/pngimages/782/114/png-clipart-profile-icon-circled-user-icon-icons-logos-emojis-users-thumbnail.png");
 	background-position: 50% 50%;
 	margin: 0 auto;
 }
@@ -2506,7 +2513,7 @@
 	--animation-custom_in-rotate: 0deg;
 	--animation-custom_in-scale: 0.3;
 	width: 154px;
-	background-image: url("//images01.nicepagecdn.com/c461c07a441a5d220e8feb1a/bb4a3324cba15018a0c8e5ad/pretty-smiling-joyfully-female-with-fair-hair-dressed-casually-looking-with-satisfaction_176420-15187.jpg?version=");
+	background-image: url("https://e7.pngegg.com/pngimages/782/114/png-clipart-profile-icon-circled-user-icon-icons-logos-emojis-users-thumbnail.png");
 	background-position: 50% 50%;
 	margin: 0 auto;
 }
@@ -2546,7 +2553,7 @@
 	--animation-custom_in-rotate: 0deg;
 	--animation-custom_in-scale: 0.3;
 	width: 154px;
-	background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/16689/images/5man.jpg");
+	background-image: url("https://e7.pngegg.com/pngimages/782/114/png-clipart-profile-icon-circled-user-icon-icons-logos-emojis-users-thumbnail.png");
 	background-position: 50% 50%;
 	margin: 0 auto;
 }
@@ -2584,7 +2591,7 @@
 	--animation-custom_in-rotate: 0deg;
 	--animation-custom_in-scale: 0.3;
 	width: 154px;
-	background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/16689/images/woman9.jpg");
+	background-image: url("https://e7.pngegg.com/pngimages/782/114/png-clipart-profile-icon-circled-user-icon-icons-logos-emojis-users-thumbnail.png");
 	background-position: 50% 50%;
 	margin: 0 auto;
 }

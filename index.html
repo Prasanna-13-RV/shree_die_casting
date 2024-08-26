@@ -6,20 +6,24 @@
 		<meta name="keywords" content="​Full service interior studio" />
 		<meta name="description" content="" />
 		<title>Home | Shree Die Casting</title>
-		<link rel="stylesheet" href="./css/style.css" media="screen" />
-		<link rel="stylesheet" href="./css/main.css" media="screen" />
-		<link rel="stylesheet" href="./css/home.css" media="screen" />
-		<link rel="stylesheet" href="./css/footer.css" media="screen" />
-		<link rel="shortcut icon" href="./public/images/logo/logoTransparentBg.png" type="image/x-icon">
+		<link rel="stylesheet" href="./public/css/style.css" media="screen" />
+		<link rel="stylesheet" href="./public/css/main.css" media="screen" />
+		<link rel="stylesheet" href="./public/css/home.css" media="screen" />
+		<link rel="stylesheet" href="./public/css/footer.css" media="screen" />
+		<link rel="stylesheet" href="./public/css/swiper.css" media="screen" />
+		<link
+			rel="shortcut icon"
+			href="./public/images/logo/logoTransparentBg.png"
+			type="image/x-icon" />
 		<script
 			class="u-script"
 			type="text/javascript"
-			src="./js/jquery.js"
+			src="./public/js/jquery.js"
 			defer=""></script>
 		<script
 			class="u-script"
 			type="text/javascript"
-			src="./js/main.js"
+			src="./public/js/main.js"
 			defer=""></script>
 		<meta name="generator" content="Nicepage 6.11.6, nicepage.com" />
 		<meta name="referrer" content="origin" />
@@ -44,6 +48,40 @@
 				dynamicLoadScript()
 			})
 		</script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script type="module">
+			import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs"
+
+			const swiper = new Swiper(".swiper", {
+				// Optional parameters
+				// Navigation arrows
+				loop: true,
+				slidesPerView: 1,
+				spaceBetween: 10,
+				autoplay: {
+					delay: 1000,
+					disableOnInteraction: false,
+				},
+				breakpoints: {
+					640: {
+						slidesPerView: 1,
+						spaceBetween: 20,
+					},
+					768: {
+						slidesPerView: 4,
+						spaceBetween: 40,
+					},
+					1024: {
+						slidesPerView: 5,
+						spaceBetween: 50,
+					},
+				},
+			})
+		</script>
 	</head>
 	<body
 		data-path-to-root="/"
@@ -52,7 +90,9 @@
 		data-lang="en">
 		<header class="u-clearfix u-header u-header" id="sec-94fb">
 			<div class="u-clearfix u-sheet u-valign-middle u-sheet-1 logoDiv">
-				<a href="./index.html" class="u-image u-logo u-image-1 logoStyle">
+				<a
+					href="./index.html"
+					class="u-image u-logo u-image-1 logoStyle">
 					<img
 						src="./public/images/logo/logo.png"
 						class="u-logo-image u-logo-image-1"
@@ -181,9 +221,9 @@
 					data-animation-name="customAnimationIn"
 					data-animation-duration="1500"
 					data-animation-delay="500">
-					Since its inception in 2009, East west India is providing a
-					seamless die casting service to diversified industrial
-					players meeting all your business requirements. &nbsp;<a
+					Since its inception in 2009, we deliver precision and
+					reliability with cutting-edge technology and expert
+					craftsmanship. &nbsp; <br /><a
 						href="https://m.indiamart.com/shree-die-casting-chennai/"
 						class="u-active-none u-border-1 u-border-active-palette-1-light-2 u-border-hover-palette-1-light-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1"
 						target="_blank"
@@ -204,33 +244,79 @@
 				>
 			</div>
 		</section>
-		<section class="marquee-container">
-			<div class="marquee">
+		<!-- <section class="marquee-container">
+			<div class="marquee" id="marquee">
 				<img src="./public/images/air_breeze.jpeg" alt="Air Breeze" />
-				<img
-					src="./public/images/east_west.jpeg"
-					alt="East West Combined Industry" />
 				<img src="./public/images/kali.jpeg" alt="Kali" />
 				<img
 					src="./public/images/philips_versuni.jpeg"
 					alt="Philips Versuni" />
 				<img src="./public/images/preethi.jpeg" alt="Preethi" />
 				<img src="./public/images/tag.jpeg" alt="Tag" />
+				<img src="./public/images/air_breeze.jpeg" alt="Air Breeze" />
 				<img src="./public/images/kali.jpeg" alt="Kali" />
-				<!-- <img src="./public/images/versuni.jpeg" alt="Versuni" /> -->
+				<img
+					src="./public/images/philips_versuni.jpeg"
+					alt="Philips Versuni" />
+				<img src="./public/images/preethi.jpeg" alt="Preethi" />
+				<img src="./public/images/tag.jpeg" alt="Tag" />
+			</div>
+		</section> -->
 
-				<img src="./public/images/air_breeze.jpeg" alt="Air Breeze" />
-				<img
-					src="./public/images/east_west.jpeg"
-					alt="East West Combined Industry" />
-				<img src="./public/images/kali.jpeg" alt="Kali" />
-				<img
-					src="./public/images/philips_versuni.jpeg"
-					alt="Philips Versuni" />
-				<img src="./public/images/preethi.jpeg" alt="Preethi" />
-				<img src="./public/images/tag.jpeg" alt="Tag" />
-				<img src="./public/images/kali.jpeg" alt="Kali" />
-				<!-- <img src="./public/images/versuni.jpeg" alt="Versuni" /> -->
+		<section class="marquee-container">
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide marquee">
+						<img
+							src="./public/images/air_breeze.jpeg"
+							alt="Air Breeze" />
+					</div>
+					<div class="swiper-slide marquee">
+						<img src="./public/images/kali.jpeg" alt="Kali" />
+					</div>
+					<div class="swiper-slide marquee">
+						<img
+							src="./public/images/philips_versuni.jpeg"
+							alt="Philips Versuni" />
+					</div>
+					<div class="swiper-slide marquee">
+						<img src="./public/images/preethi.jpeg" alt="Preethi" />
+					</div>
+					<div class="swiper-slide marquee">
+						<img src="./public/images/tag.jpeg" alt="Tag" />
+					</div>
+
+					<div class="swiper-slide marquee">
+						<img
+							src="./public/images/air_breeze.jpeg"
+							alt="Air Breeze" />
+					</div>
+					<div class="swiper-slide marquee">
+						<img src="./public/images/kali.jpeg" alt="Kali" />
+					</div>
+					<div class="swiper-slide marquee">
+						<img
+							src="./public/images/philips_versuni.jpeg"
+							alt="Philips Versuni" />
+					</div>
+					<div class="swiper-slide marquee">
+						<img src="./public/images/preethi.jpeg" alt="Preethi" />
+					</div>
+					<div class="swiper-slide marquee">
+						<img src="./public/images/tag.jpeg" alt="Tag" />
+					</div>
+				</div>
+				<!-- If we need pagination -->
+				<!-- <div class="swiper-pagination"></div> -->
+
+				<!-- If we need navigation buttons -->
+				<!-- <div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div> -->
+
+				<!-- If we need scrollbar -->
+				<!-- <div class="swiper-scrollbar"></div> -->
 			</div>
 		</section>
 		<section
@@ -326,14 +412,36 @@
 		<section
 			class="u-align-center u-clearfix u-container-align-center u-section-3"
 			id="carousel_dcd8">
+			<div
+				class="u-container-align-center u-container-style u-expanded-width u-grey-5 u-group u-shape-rectangle u-group-1">
+				<div
+					class="u-container-layout u-valign-top u-container-layout-1">
+					<h3
+						class="u-align-center u-text u-text-default u-text-1"
+						data-animation-name="customAnimationIn"
+						style="padding-bottom: 3rem; font-size: 2rem"
+						data-animation-duration="1500">
+						Precision die casting solutions for today's needs
+					</h3>
+					<!-- <p
+						class="u-align-center u-text u-text-2"
+						data-animation-name="customAnimationIn"
+						data-animation-duration="1500"
+						data-animation-delay="500">
+						Explore our wide range of high-quality die cast
+						products, crafted with precision and engineered to meet
+						the highest industry standards.
+					</p> -->
+				</div>
+			</div>
 			<div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-				<h2
+				<!-- <h2
 					class="u-align-center u-text u-text-default u-text-1"
 					data-animation-name="customAnimationIn"
 					data-animation-duration="1500"
 					data-animation-delay="500">
-					Precision die casting solutions for today's needs
-				</h2>
+					
+				</h2> -->
 				<div
 					class="data-layout-selected u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
 					<div class="u-gutter-0 u-layout">
@@ -510,27 +618,27 @@
 			<div class="u-list u-list-1">
 				<div class="u-repeater u-repeater-1">
 					<div
-						class="u-align-left u-container-style u-image u-list-item u-repeater-item u-shading u-image-1"
+						class="u-align-left u-container-style u-image u-list-item u-repeater-item u-shading u-image-5"
 						src=""
-						data-image-width="1800"
-						data-image-height="1029"
+						data-image-width="1380"
+						data-image-height="920"
 						data-animation-name="customAnimationIn"
 						data-animation-duration="1500"
-						data-animation-delay="500">
+						data-animation-delay="750">
 						<div
-							class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
+							class="u-container-layout u-similar-container u-valign-middle u-container-layout-10">
 							<div
-								class="u-align-center u-black u-container-style u-expanded-width u-group u-opacity u-opacity-60 u-group-2"
+								class="u-align-center u-black u-container-style u-expanded-width u-group u-opacity u-opacity-60 u-group-6"
 								data-animation-name=""
 								data-animation-duration="0"
 								data-animation-delay="0"
 								data-animation-direction="">
 								<div
-									class="u-container-layout u-valign-middle u-container-layout-3">
-									<h6 class="u-text u-text-3">
+									class="u-container-layout u-valign-middle u-container-layout-11">
+									<h6 class="u-text u-text-7">
 										<a
-											href="./views/products.html#motorCasting">
-											Motor Casting
+											href="./views/products.html#bushHolders">
+											Bush Holders
 										</a>
 									</h6>
 								</div>
@@ -566,34 +674,6 @@
 						</div>
 					</div>
 					<div
-						class="u-align-left u-container-style u-image u-list-item u-repeater-item u-shading u-image-3"
-						src=""
-						data-image-width="900"
-						data-image-height="900"
-						data-animation-name="customAnimationIn"
-						data-animation-duration="1500"
-						data-animation-delay="500">
-						<div
-							class="u-container-layout u-similar-container u-valign-middle u-container-layout-6">
-							<div
-								class="u-align-center u-black u-container-style u-expanded-width u-group u-opacity u-opacity-60 u-group-4"
-								data-animation-name=""
-								data-animation-duration="0"
-								data-animation-delay="0"
-								data-animation-direction="">
-								<div
-									class="u-container-layout u-valign-middle u-container-layout-7">
-									<h6 class="u-text u-text-5">
-										<a
-											href="./views/products.html#holdersLockers">
-											Holders & Lockes
-										</a>
-									</h6>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div
 						class="u-align-left u-container-style u-image u-list-item u-repeater-item u-shading u-image-4"
 						src=""
 						data-image-width="1380"
@@ -622,33 +702,63 @@
 						</div>
 					</div>
 					<div
-						class="u-align-left u-container-style u-image u-list-item u-repeater-item u-shading u-image-5"
+						class="u-align-left u-container-style u-image u-list-item u-repeater-item u-shading u-image-1"
 						src=""
-						data-image-width="1380"
-						data-image-height="920"
+						data-image-width="1800"
+						data-image-height="1029"
 						data-animation-name="customAnimationIn"
 						data-animation-duration="1500"
-						data-animation-delay="750">
+						data-animation-delay="500">
 						<div
-							class="u-container-layout u-similar-container u-valign-middle u-container-layout-10">
+							class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
 							<div
-								class="u-align-center u-black u-container-style u-expanded-width u-group u-opacity u-opacity-60 u-group-6"
+								class="u-align-center u-black u-container-style u-expanded-width u-group u-opacity u-opacity-60 u-group-2"
 								data-animation-name=""
 								data-animation-duration="0"
 								data-animation-delay="0"
 								data-animation-direction="">
 								<div
-									class="u-container-layout u-valign-middle u-container-layout-11">
-									<h6 class="u-text u-text-7">
+									class="u-container-layout u-valign-middle u-container-layout-3">
+									<h6 class="u-text u-text-3">
 										<a
-											href="./views/products.html#bushHolders">
-											Bush Holders
+											href="./views/products.html#motorCasting">
+											Motor Casting
 										</a>
 									</h6>
 								</div>
 							</div>
 						</div>
 					</div>
+
+					<div
+						class="u-align-left u-container-style u-image u-list-item u-repeater-item u-shading u-image-3"
+						src=""
+						data-image-width="900"
+						data-image-height="900"
+						data-animation-name="customAnimationIn"
+						data-animation-duration="1500"
+						data-animation-delay="500">
+						<div
+							class="u-container-layout u-similar-container u-valign-middle u-container-layout-6">
+							<div
+								class="u-align-center u-black u-container-style u-expanded-width u-group u-opacity u-opacity-60 u-group-4"
+								data-animation-name=""
+								data-animation-duration="0"
+								data-animation-delay="0"
+								data-animation-direction="">
+								<div
+									class="u-container-layout u-valign-middle u-container-layout-7">
+									<h6 class="u-text u-text-5">
+										<a
+											href="./views/products.html#holdersLockers">
+											Holders & Lockes
+										</a>
+									</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<div
 						class="u-align-left u-container-style u-image u-list-item u-repeater-item u-shading u-image-6"
 						src=""
@@ -1064,14 +1174,14 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 							<div
 								class="u-container-layout u-similar-container u-valign-middle u-container-layout-4">
 								<h5 class="u-text u-text-default u-text-8">
-									Companies
+									No of Employees
 								</h5>
 								<h3
 									class="u-custom-font u-font-montserrat u-text u-text-default u-text-grey-40 u-text-9"
 									data-animation-name="counter"
 									data-animation-event="scroll"
 									data-animation-duration="3000">
-									5
+									25+
 								</h3>
 							</div>
 						</div>
@@ -1079,7 +1189,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 				</div>
 			</div>
 		</section>
-		<!-- <section
+		<section
 			class="u-align-center u-clearfix u-container-align-center u-section-10"
 			id="carousel_5410">
 			<div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
@@ -1114,40 +1224,11 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 									data-animation-duration="0"
 									data-animation-delay="0"
 									data-animation-direction="">
-									Nat Reynolds
+									Vishal. M
 								</h4>
 								<p
 									class="u-align-center u-large-text u-text u-text-default u-text-variant u-text-3">
-									Developer, co-founder
-								</p>
-							</div>
-						</div>
-						<div
-							class="u-container-style u-list-item u-repeater-item u-shape-rectangle u-video-cover u-white u-list-item-2"
-							data-animation-name="customAnimationIn"
-							data-animation-duration="1500"
-							data-animation-delay="500">
-							<div
-								class="u-container-layout u-similar-container u-valign-top u-container- layout-2">
-								<div
-									alt=""
-									class="custom-expanded u-image u-image-circle u-image-2"
-									data-image-width="626"
-									data-image-height="417"
-									data-animation-name="customAnimationIn"
-									data-animation-duration="1250"
-									data-animation-delay="250"></div>
-								<h4
-									class="u-align-center u-text u-text-default u-text-4"
-									data-animation-name=""
-									data-animation-duration="0"
-									data-animation-delay="0"
-									data-animation-direction="">
-									Jennie Roberts
-								</h4>
-								<p
-									class="u-align-center u-large-text u-text u-text-default u-text-variant u-text-5">
-									Partner
+									Partner, Plant Head
 								</p>
 							</div>
 						</div>
@@ -1172,11 +1253,11 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 									data-animation-duration="0"
 									data-animation-delay="0"
 									data-animation-direction="">
-									&nbsp;Mila Parker
+									L. Manickam
 								</h4>
 								<p
 									class="u-align-center u-large-text u-text u-text-default u-text-variant u-text-7">
-									Sales Manager
+									Managing Partner
 								</p>
 							</div>
 						</div>
@@ -1201,11 +1282,11 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 									data-animation-duration="0"
 									data-animation-delay="0"
 									data-animation-direction="">
-									Monica Pouli
+									M. Gowri
 								</h4>
 								<p
 									class="u-align-center u-large-text u-text u-text-default u-text-variant u-text-9">
-									Designer
+									Partner
 								</p>
 							</div>
 						</div>
@@ -1230,11 +1311,11 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 									data-animation-duration="0"
 									data-animation-delay="0"
 									data-animation-direction="">
-									Peter Howard
+									Sakthivel
 								</h4>
 								<p
 									class="u-align-center u-large-text u-text u-text-default u-text-variant u-text-11">
-									Designer
+									Supervisor, Production Incharge
 								</p>
 							</div>
 						</div>
@@ -1259,11 +1340,11 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 									data-animation-duration="0"
 									data-animation-delay="0"
 									data-animation-direction="">
-									Sasha Payne
+									Perumal
 								</h4>
 								<p
 									class="u-align-center u-large-text u-text u-text-default u-text-variant u-text-13">
-									Designer
+									Supervisor, Quality Incharge
 								</p>
 							</div>
 						</div>
@@ -1312,7 +1393,7 @@ c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,24
 					</a>
 				</div>
 			</div>
-		</section> -->
+		</section>
 		<!-- <section
 			class="skrollable u-clearfix u-container-align-center u-image u-parallax u-shading u-section-11"
 			id="carousel_e089"
